@@ -352,6 +352,14 @@
 		margin-right: 2%;
 	}
 
+	.drgrpg-playerName {
+		font-size: 18px;
+	}
+
+	.drgrpg-playerGuild {
+		font-size: 16px;
+	}
+
 	.drgrpg-playerInfo {
 		position: fixed;
 		top: 0;
@@ -363,18 +371,33 @@
 		margin-right: -10px;
 	}
 
+	.drgrpg-playerStats__list {
+		margin: 0 6px;
+	}
+
 	.drgrpg-playerStats__label {
 		display: inline;
 		float: none;
+		margin-right: 0;
 	}
 
 	.drgrpg-playerStats__value {
 		display: inline;
-		margin-right: 8px;
+		margin-right: 15px;
 	}
 
 	.drgrpg-processingBar {
 		padding: 10px;
 		line-height: 1.2;
+	}
+
+	.drgrpg-playerHPContainer,
+	.drgrpg-playerMPContainer {
+		max-width: 48%;
+		float: left;
+	}
+
+	.drgrpg-playerHPContainer {
+		margin-right: 2%;
 	}
 }

@@ -849,6 +849,7 @@ var DRGRPG = ( function( $ ) {
 		fragment.appendChild( mpContainer );
 
 		dl = document.createElement( 'dl' );
+		dl.className = 'drgrpg-playerStats__list';
 
 		for ( var i = 0, len = config.playerStatsToShow.length; i < len; i++ ) {
 			dt = document.createElement( 'dt' );

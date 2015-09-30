@@ -114,7 +114,7 @@ var DRGRPG = ( function( $ ) {
 				'dropItemLink': 'drop',
 			},
 		},
-		pendingTranslation,
+		pendingTranslation = null,
 		first_turn = true,
 		executingTurn = false,
 		showingProcessingBar = false,
@@ -2372,7 +2372,19 @@ var DRGRPG = ( function( $ ) {
 	  * @return void
 	  */
 	 var updateTranslation = function( newTranslation ) {
-		pendingTranslation = newTranslation;
+	 	if ( null === pendingTranslation ) {
+		 	// No currently pending translation so use the object passed
+		 	// in as is.
+			pendingTranslation = newTranslation;
+	 	} else {
+	 		// Already a pending translation so need to combine the
+	 		// two objects.
+	 		for ( var key in newTranslation ) {
+	 			if ( newTranslation.hasOwnProperty( key ) ) {
+	 				pendingTranslation[ key ] = newTranslation[ key ];
+	 			}
+	 		}
+	 	}
 	};
 
 	/**

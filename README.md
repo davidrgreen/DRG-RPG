@@ -1,4 +1,4 @@
-# README #
+# DRG RPG #
 
 DRG RPG allows you to easily setup a RPG using WordPress. Explore a world (fantasy, science fiction, or whatever you want), fight enemies, join guilds, earn achievements, and more.
 

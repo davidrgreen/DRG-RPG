@@ -368,6 +368,7 @@ var DRGRPG = ( function( $ ) {
 			processCombatData( data.new_combat );
 			changeViewing( 'Combat' );
 			displayCombat();
+			scrollIntoView();
 		}
 
 		if ( data.fleeCombat ) {

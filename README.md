@@ -1,6 +1,6 @@
 # DRG RPG #
 
-DRG RPG allows you to easily setup a RPG using WordPress. Explore a world (fantasy, science fiction, or whatever you want), fight enemies, join guilds, earn achievements, and more.
+DRG RPG (David R Green Role-Playing Game) allows you to easily setup a RPG using WordPress. Explore a world (fantasy, science fiction, or whatever you want), fight enemies, join guilds, earn achievements, and more.
 
 It began as (and still is) the testing/demonstrating of my PHP and JS skills to get a full-time job and stop freelancing. If you have any job openings for front or back end developers, please [visit my personal site](http://davidrg.com).
 

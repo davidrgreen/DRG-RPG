@@ -1,0 +1,9 @@
+[submodule "includes/CMB2"]
+	path = includes/CMB2
+	url = https://github.com/WebDevStudios/CMB2.git
+[submodule "includes/cmb2-attached-posts"]
+	path = includes/cmb2-attached-posts
+	url = https://github.com/WebDevStudios/cmb2-attached-posts.git
+[submodule "includes/CMB2-post-search-field"]
+	path = includes/CMB2-post-search-field
+	url = https://github.com/WebDevStudios/CMB2-Post-Search-field.git

@@ -897,6 +897,7 @@ var DRGRPG = ( function( $ ) {
 		if ( oldRoom && oldRoom !== room.id ) {
 			doAction( 'playerMoved' );
 			interactingWith = '';
+			scrollIntoView();
 		} else if ( oldRoom ) {
 			doAction( 'roomUpdated' );
 		}
@@ -1251,10 +1252,16 @@ var DRGRPG = ( function( $ ) {
 	 * @return {void}
 	 */
 	var scrollIntoView = function() {
-		$('html, body').animate({
-			scrollTop: cached.$mainMenu.offset().top-100
-		}, 'fast');
-		$("html, body").scrollTop();
+
+		// Don't scroll if the page is still near the top
+		if ( $( document ).scrollTop() < 120 ) {
+			return;
+		}
+
+		$( 'html, body' ).animate({
+			scrollTop: cached.$mainMenu.offset().top - 100
+		}, 'fast' );
+		$( 'html, body' ).scrollTop();
 	};
 
 	/**

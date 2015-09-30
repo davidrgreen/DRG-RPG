@@ -1210,6 +1210,7 @@ var DRGRPG = ( function( $ ) {
 			interactingWith = '';
 			frag = convertStringToFragment( room.description );
 			fadeHTMLFragment( cached.$roomDescription, frag );
+			scrollIntoView();
 			return;
 		}
 
@@ -1233,11 +1234,27 @@ var DRGRPG = ( function( $ ) {
 					// Remember the description of the object being interacted with
 					interactingWith = frag.cloneNode( true );
 
+					scrollIntoView();
+
 					// Found what we need. Break out of the loop early.
 					break;
 				}
 			}
 		}
+	};
+
+	/**
+	 * Scroll the room or object description back into view.
+	 *
+	 * @since 0.1.0
+	 * @access private
+	 * @return {void}
+	 */
+	var scrollIntoView = function() {
+		$('html, body').animate({
+			scrollTop: cached.$mainMenu.offset().top-100
+		}, 'fast');
+		$("html, body").scrollTop();
 	};
 
 	/**

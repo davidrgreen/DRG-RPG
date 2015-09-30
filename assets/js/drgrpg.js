@@ -2418,7 +2418,7 @@ var DRGRPG = ( function( $ ) {
 	 		funcReturn;
 
 	 	if ( ! config.language[ text ] ) {
-	 		return 'null';
+	 		return '';
 	 	}
 
 	 	typeOfValue = typeof config.language[ text ];

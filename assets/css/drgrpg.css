@@ -1,0 +1,380 @@
+/**
+ * DRG RPG CSS
+ *
+ * @package DRGRPG
+ * @copyright Copyright 2015 David Green
+ * @license GPL2
+ */
+
+.drgrpg-achievementList__content--new {
+	color: green;
+	font-weight: 700;
+}
+
+.drgrpg-achievementList__name--unearned,
+.drgrpg-achievementList__content--unearned {
+	color: gray;
+}
+
+.drgrpg-processingBar.drgrpg-processingBar--error {
+	background: #f8d6d9;
+}
+
+.drgrpg-equipmentList__item__name{
+	margin-right: 2px;
+}
+
+.drgrpg-equipmentList__item__stats__value {
+	margin-right: 5px;
+}
+
+.drgrpg-mainMenu__button {
+	border-radius: 0;
+	margin: 0 1px 1px;
+}
+
+.drgrpg-mainMenu__button--active {
+	background: #95AB95;
+}
+
+.drgrpg-mainMenu__button--disabled {
+	background: gray;
+	cursor: not-allowed;
+}
+
+.drgrpg-mainMenu__button--notice {
+	background: orange;
+}
+
+.drgrpg-playerIdentity:before,
+.drgrpg-playerIdentity:after {
+	content: " ";
+	display: table;
+}
+
+.drgrpg-playerIdentity:after {
+	clear: both;
+}
+
+.drgrpg-playerIdentity {
+	zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.drgrpg-playerIdentity {
+	margin-bottom: 10px;
+}
+
+.drgrpg-playerAvatar {
+	float: left;
+	margin-right: 5px;
+	width: 48px
+}
+
+.drgrpg-playerName {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.drgrpg-playerGuild {
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+.drgrpg-playerStats__label {
+	float: left;
+	text-align: left;
+	clear: left;
+	margin-right: 6px;
+}
+
+.drgrpg-playerStats__value {
+	margin-left: 0px;
+	margin: 0;
+}
+
+.drgrpg-playerHPContainer {
+	position: relative;
+	width: 100%;
+	max-width: 200px;
+	height: 24px;
+	background: #000;
+}
+
+.drgrpg-playerHP {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 24px;
+	background: crimson;
+}
+
+.drgrpg-playerHPNumber {
+	position: absolute;
+	top: 0;
+	left: 2px;
+	z-index: 3;
+}
+
+.drgrpg-playerHPNumber__label,
+.drgrpg-playerHPNumber__value {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+	color: #fff;
+}
+
+.drgrpg-playerMPContainer {
+	position: relative;
+	width: 100%;
+	max-width: 200px;
+	height: 24px;
+	background: #000;
+	margin-bottom: 6px;
+}
+.drgrpg-playerMP {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 24px;
+	background: navy;
+}
+
+.drgrpg-playerMPNumber {
+	position: absolute;
+	top: 0;
+	left: 2px;
+	z-index: 3;
+}
+
+.drgrpg-playerMPNumber__label,
+.drgrpg-playerMPNumber__value {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+	color: #fff;
+}
+
+.drgrpg-roomDescription {
+	margin-bottom: 15px;
+}
+
+.drgrpg-roomActions__list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.drgrpg-roomActions__list__item {
+	display: inline;
+	margin-right: 18px;
+}
+
+.drgrpg-enemies {
+	list-style: none;
+	padding-left: 0;
+}
+
+.drgrpg-enemy {
+	display: inline-block;
+	width: 32%;
+	margin-right: 2%;
+	margin-bottom: 14px;
+}
+
+.drgrpg-enemy:nth-child(3n) {
+	margin-right: 0;
+}
+
+.drgrpg-enemy--defeated .drgrpg-enemy__image {
+	opacity: 0.5;
+}
+
+.drgrpg-enemy__name {
+	padding: 2px 5px 1px;
+	border: solid 1px #000;
+	font-weight: 700;
+}
+
+.drgrpg-enemy__image {
+	width: 100%;
+}
+
+.drgrpg-enemyHPContainer {
+	position: relative;
+	width: 100%;
+	height: 24px;
+	background: #000;
+}
+
+.drgrpg-enemyHP {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 24px;
+	background: crimson;
+}
+
+.drgrpg-enemyHPNumber {
+	position: absolute;
+	top: 0;
+	left: 2px;
+	z-index: 3;
+}
+
+.drgrpg-enemyHPNumber__label,
+.drgrpg-enemyHPNumber__value {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+	color: #fff;
+}
+
+.drgrpg-combatButtons {
+	margin-bottom: 20px;
+}
+
+.drgrpg-combatButtons__button {
+	margin-right: 12px;
+}
+
+.drgrpg-combatResults__message {
+	margin-bottom: 5px;
+}
+
+.drgrpg-combatResults__message--playerFlee {
+	color: orangered;
+}
+
+.drgrpg-combatResults__message--playerDefeated {
+	color: red;
+	font-weight: 700;
+}
+
+.drgrpg-combatResults__message--playerSkillUsed {
+	color: navy;
+	font-weight: 700;
+}
+
+.drgrpg-itemsList__item__count {
+	margin-right: 10px;
+}
+
+.drgrpg-itemsList__item__link,
+.drgrpg-equipmentList__item__link {
+	margin: 0 5px;
+}
+
+.drgrpg-itemsList__item__stats__value {
+	margin-right: 10px;
+}
+
+.drgrpg-equipmentList {
+	list-style: none;
+	padding-left: 0;
+}
+
+.drgrpg-equipmentList__item__slot {
+	font-weight: 700;
+}
+
+.drgrpg-notifications__message {
+	border: solid 2px #000;
+	background: #FFFFCC;
+	border-radius: 3px;
+	padding: 8px;
+	margin-bottom: 12px;
+}
+
+.drgrpg-notifications__message:hover {
+	opacity: 0.8;
+}
+
+.drgrpg-notifications__dismissLink {
+	font-weight: 400;
+}
+
+.drgrpg-notifications__message__text {
+	margin-bottom: 0;
+}
+
+.drgrpg-notifications__message--error {
+	background: #f8d6d9;
+	font-weight: 700;
+	border: solid 2px #e67079;
+}
+
+.drgrpg-notifications__message--error .drgrpg-notifications__dismissLink {
+	color: crimson;
+}
+
+.drgrpg-notifications__message--guild,
+.drgrpg-notifications__message--skill,
+.drgrpg-notifications__message--achievement,
+.drgrpg-notifications__message--goodNews {
+	background: #d2f8eb;
+	border: solid 2px #62e5b7;
+}
+
+.drgrpg-notifications__message--goodNews .drgrpg-notifications__dismissLink {
+	color: darkgreen;
+	text-decoration: underline
+}
+
+.drgrpg-processingBar {
+	position: fixed;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	z-index: 10000000000;
+	background: #d2f8eb;
+	color: #000;
+	text-align: center;
+	min-height: 50px;
+	line-height: 50px;
+	box-shadow: 0 0 5px 1px #000;
+}
+
+@media screen and (max-width: 800px) {
+	.drgrpg-enemy {
+		width: 48%;
+		margin-right: 0;
+		margin-bottom: 14px;
+	}
+
+	.drgrpg-enemy:nth-child(odd) {
+		margin-right: 2%;
+	}
+
+	.drgrpg-playerInfo {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		padding: 8px 5px 2px;
+		background: #fff;
+		box-shadow: 0 1px 2px #000;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.drgrpg-playerStats__label {
+		display: inline;
+		float: none;
+	}
+
+	.drgrpg-playerStats__value {
+		display: inline;
+		margin-right: 8px;
+	}
+
+	.drgrpg-processingBar {
+		padding: 10px;
+		line-height: 1.2;
+	}
+}

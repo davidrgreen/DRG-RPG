@@ -15,10 +15,10 @@ Feel free to fork the plugin, but I'm not accepting pull requests currently. I h
 1. **[DONE]** Create the plugin with whatever base functionality can be done in 5 weeks.
 
 2.  Refactoring and Quality Check
-	- Probably move out player data of user meta into a custom database table.
+	- Probably move player data out of user meta into a custom database table.
 	- Reevaluate class structure to reduce duplicate code.
 	- Audit SQL queries and general performance improvements.
-	- Eliminate screen flicker during combat on mobile.
+	- Eliminate screen flicker during combat on mobile by manipulating styles instead of overwriting document nodes.
 	- Test browser compatibility.
 
 3. Continue adding features:

@@ -2,7 +2,7 @@
 
 DRG RPG (David R Green Role-Playing Game) allows you to easily setup a RPG using WordPress. Explore a world (fantasy, science fiction, or whatever you want), fight enemies, join guilds, earn achievements, and more.
 
-[Play the demo](http://drg-rpg.com) where there is a game world built around people and businesses in the WordPress community, both praising and teasing them.
+[Play the demo](http://drg-rpg.com) where there is a game world built around people and businesses in the WordPress community, both praising and teasing them. [Read the wiki](https://github.com/davidrgreen/DRG-RPG/wiki) for info on personalizing the game through WP hooks, CSS, and a JavaScript hook and translation system I built into the plugin.
 
 It began as (and still is) the testing/demonstrating of my PHP and JS skills to get a full-time job and stop freelancing. If you have any job openings for front or back end developers, please [visit my personal site](http://davidrg.com).
 
